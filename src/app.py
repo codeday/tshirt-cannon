@@ -13,7 +13,7 @@ shirts = {
 }
 
 
-@app.route('/send')
+@app.route('/send', methods=['POST'])
 def tshirt_cannon():
     body = request.json
     print(body)
