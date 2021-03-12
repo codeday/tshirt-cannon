@@ -32,4 +32,5 @@ def tshirt_cannon():
     ss_order.set_shipping_address(shipping_address)
     ss_order.add_item(shirts[body['TShirtSize']])
     ss.add_order(ss_order)
+    ss.submit_orders()
     return
